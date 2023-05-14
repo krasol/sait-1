@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta
+	name="viewport"
+	content="
+		width=device-width,
+		initial-scale=1.0,
+		minimal-scale=1.0,
+		maximal-scale=1.0,
+		user-scalable=no
+	"
+>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hot marketing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+@font-face
+  {
+  font-family: Nfont;
+  src: url(/templates/centurygothic_bold.ttf);
+  }
+.rectangle{
+
+      z-index: 1;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 115px;
+    margin:auto;
+    background-color: white;}
+    .text{
+    color: #ffffff;
+}
+.logobol{
+  margin-top: 8px;
+  width: 16%;
+  height: 95px;
+  margin-left:54px;
+}
+.logomal{
+ width: 3%;
+ height: 52%;
+ margin-left: 60%;
+-webkit-transition: all 1s ease;
+ transition: all 1s ease;
+}
+.logomal2{
+ width: 3%;
+ height:52%;
+ margin-left: 1.8%;
+ -webkit-transition: all 1s ease;
+ transition: all 1s ease;
+}
+
+img.logomal:hover {
+   transform: scale(1.2); /* Увеличиваем масштаб */
+}
+img.logomal2:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+
+}
+.block {
+  width: 200px;
+  height: 175px;
+  display: inline-block;
+  filter: grayscale(0%);
+  transition: 1s;
+  color: steelblue;
+  font-size: 30px;
+}
+.text2 {
+  display: none;
+}
+
+.container:hover .text1 {
+  display: none;
+}
+
+.container:hover .text2 {
+  display: block;
+}
+<!--.box {-->
+<!-- margin-top: 3%;-->
+<!--    color: white;-->
+<!--    font-size: 2rem;-->
+<!--    width: 500px;-->
+<!--    height: 500px;-->
+<!--    overflow-y: auto;-->
+<!--    scroll-snap-type: y mandatory;-->
+<!--    }-->
+<!--.item {-->
+<!--    height: 100%;-->
+<!--    width: 100%;-->
+<!--    text-align: center;-->
+<!--    scroll-snap-align: start;-->
+<!--    scroll-snap-stop: always;-->
+<!--    }-->
+
+<!--.item:nth-child(1) {-->
+<!--    background-color: blue;-->
+<!--    }-->
+
+<!--.item:nth-child(2) {-->
+<!--    background-color: brown;-->
+<!--    }-->
+
+<!--.item:nth-child(3) {-->
+<!--    background-color: teal;-->
+<!--    }-->
+<!--.box::-webkit-scrollbar {-->
+<!--  width: 0;-->
+<!--}-->
+.vtoroiblock{
+    background-color: #9d9d9c;
+    width: 100%;
+    height: 1200px;
+
+
+     display:inline-block;
+
+}
+.boxShadow8 {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 38em;
+  height: 62em;
+
+<!--  width: 80%;-->
+<!--  max-width: 450px;-->
+  padding: 1em;
+  margin-left: 5em;
+  box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+  border-radius: 8px;
+  background-color: #ebebeb;
+  display: inline-block;
+  float: left;
+
+
+}
+
+.writehot{
+    padding-top:10px;
+    margin-left: 8%;
+    font-weight: 800;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 36px;
+}
+.writehot2{
+    padding-top:20px;
+    text-align: center;
+    font-weight: 800;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 25px;
+    transform: scaleX(0.90);
+}
+.writehot4{
+    margin-top: 15%;
+    text-align: center;
+    transform: scaleX(0.85);
+    font-size: 25px;
+}
+
+div.boxShadow8:hover {
+   transform: scale(1.05); /* Увеличиваем масштаб */
+}
+.parent {
+    float: right;
+}
+
+
+
+
+  .slider-frame{
+      overflow: hidden;
+      height: 150px;
+      width: 1025px;
+      margin-top: 6%;
+      margin-right: 20px;
+  }
+
+  /*---------- SLIDE ANIMATION --------------*/
+
+
+  @keyframes slide_animation{
+      0% {bottom:0px;}
+      10% {bottom:0px;}
+      20% {bottom:400px;}
+      30% {bottom:400px;}
+      40% {bottom: 800px;}
+      50% {bottom: 800px;}
+      60% {bottom: 400px;}
+      70% {bottom: 400px;}
+      80% {bottom: 0px;}
+
+  }
+
+  @-webkit-keyframes slide_animation{
+      0% {bottom:0px;}
+      10% {bottom:0px;}
+      20% {bottom:400px;}
+      30% {bottom:400px;}
+      40% {bottom: 800px;}
+      50% {bottom: 800px;}
+      60% {bottom: 400px;}
+      70% {bottom: 400px;}
+      80% {bottom: 0px;}
+
+  }
+
+  .slide-images{
+      width: 1025px;
+      height: 420px;
+      margin: 0 0 0 0;
+      position: relative;
+      -webkit-animation-name: slide_animation;
+      animation-name: slide_animation;
+      -webkit-animation-duration: 25s;
+      animation-duration: 25s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+      animation-direction: alternate;
+      -webkit-animation-play-state: running;
+      animation-play-state: running;
+  }
+
+  .img-container{
+      width: 1200px;
+      height: 400px;
+      position: relative;
+      float: left;
+  }
+.algor{
+    padding-top:10px;
+    text-align: center;
+    font-weight: 800;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-size: 36px;
+}
+.boxshadow10{
+      -webkit-transition: all 1s ease;
+      transition: all 1s ease;
+      width: 65em;
+      height: 18em;
+      padding: 1em;
+      margin-left: 3%;
+      margin-top: 6%;
+      box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+      border-radius: 8px;
+
+      background-color:#EBEBEB;
+      border-bottom: 11em solid #C6C6C6;
+      display: inline-block;
+
+}
+div.boxShadow10:hover {
+   transform: scale(1.05); /* Увеличиваем масштаб */
+}
+.algobl{
+    margin-top: 2%;
+    margin-left: 32%;
+
+    width: 400px;
+}
+.algobl1{
+    margin-top: 1.5%;
+    margin-left:26%;
+
+}
+.vnytriblock{
+
+    margin-left:2%;
+    height: 140px;
+    width: 946px;}
+
+.vnytriblock2{
+    margin-left:6%;
+    }
+
+
+.button {
+  display: inline-block;
+  margin: 40px;
+  width: 100px;
+  height: 100px;
+  background: #FFFFFF;
+  cursor: pointer;
+  border-radius: 50%;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,.25),
+  inset 0 2px 0 rgba(255,255,255,.6),
+  0 2px 0 rgba(0,0,0,.1),
+  inset 0 0 20px rgba(0,0,0,.1);
+}
+.boxshadow11{
+    -webkit-transition: all 1s ease;
+     transition: all 1s ease;
+     width: 107em;
+     height: 40em;
+     padding-top: 1em;
+     padding-bottom: 1em;
+       margin-left: 5em;
+     margin-top: 3%;
+     box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+     border-radius: 15px;
+     background-color: #ebebeb;
+     display: inline-block;
+
+
+
+
+}
+        #slide1:checked~.first {
+            margin-left: 0;
+        }
+
+        #slide2:checked~.first {
+            margin-left: -20%;
+        }
+
+        #slide3:checked~.first {
+            margin-left: -40%;
+        }
+
+        #slide4:checked~.first {
+            margin-left: -60%;
+        }
+
+        #slide5:checked~.first {
+            margin-left: -80%;
+        }
+div.boxshadow11:hover {
+   transform: scale(1.05); /* Увеличиваем масштаб */
+}
+.boxshadow12{
+    -webkit-transition: all 1s ease;
+     transition: all 1s ease;
+     width: 108em;
+     height: 48em ;
+     padding-top: 1em;
+     padding-bottom: 1em;
+       margin-left: 5em;
+     margin-top: 3%;
+     box-shadow: 0 0 10px 5px rgba(0,0,0,0.3);
+     border-radius: 15px;
+     background: linear-gradient(to right, #C6C6C6 60%, #FFFFFF 40%);
+     display: inline-block;
+}
+div.boxshadow12:hover {
+   transform: scale(1.05); /* Увеличиваем масштаб */
+}
+.negr{
+    margin-top: 2%;
+    width: 100%;
+    height: 560px;
+.rectangle text{
+    width: 100%;
+    height: 9%;
+
+}
+.wiil{
+margin-left: 2%;
+}
+
+    </style>
+
+
+    <div class="rectangle text">
+        <img src="https://habrastorage.org/webt/an/kz/02/ankz02wqyd-swcd7ntkp8tbt0_a.png" alt="Фотография 1"
+             class="logobol">
+        <a href="https://vk.com/hottmarketing"><img
+                src="https://hsto.org/webt/on/zr/i7/onzri7q3ufkqspmiwlnvvurslo8.jpeg" alt="Фотография 2"
+                class="logomal"></a>
+        <a href="https://www.facebook.com/profile.php?id=100085411754701"><img
+                src="https://habrastorage.org/webt/bg/ku/r1/bgkur1uinudjvsp2f0nioauvku8.png" alt="Фотография 3"
+                class="logomal2"></a>
+        <a href="https://www.instagram.com/_hot.marketing_/"><img
+                src="https://habrastorage.org/webt/rp/tm/bn/rptmbnbr11vd39irw628dzqrbzi.png" alt="Фотография 4"
+                class="logomal2"></a>
+        <a href="#top"><img src="https://habrastorage.org/webt/vv/fx/td/vvfxtdxg-p5ylaavgmgohetuiwc.png"
+                                 alt="Фотография 5"
+                                 class="logomal2"></a>
+
+    </div>
+
+    <img width="100%" src="https://habrastorage.org/webt/53/-u/rb/53-urb9eqfreq0b_thclgktbvey.png"/>
+<body class="vtoroiblock">
+
+
+<div style="margin-top: 6%" class="boxShadow8">
+    <p class="writehot">Что такое hot marketing?</p>
+    <img width="100%" height="320px" src="https://habrastorage.org/webt/_l/so/i5/_lsoi57ycinkbtx2ebqxylek1za.png"
+         alt="Фотография 6">
+    <p class="writehot2">Команда профессионалов <br/>hot marketing представляет весь спектр услуг интернет-маркетинга и
+        рекламы</p>
+    <p class="writehot4">Лидогенерация, контекстная реклама, таргетированная реклама в Facebook, VK, Instagram, Tik-Tok,
+        создание и правка лендингов, управление репутацией, настройка CRM, написание продающих текстов, наполнение
+        веб-сайтов, аудиты веб-ресурсов, рекламных компаний, а также все этапы брендинга и дизайна.</p>
+</div>
+<div style="parent">
+    <div class="boxshadow10">
+        <img class="algobl" src="https://habrastorage.org/webt/6b/c8/vm/6bc8vmwi_ht2t7gxux1dq4jvfyo.png">
+        <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container">
+                    <img class="vnytriblock"
+                         src="https://habrastorage.org/webt/bv/ba/9u/bvba9uqn6ge8urj2xfu_5j6wkhe.png">
+                </div>
+                <div class="img-container">
+                    <img class="vnytriblock"
+                         src="https://habrastorage.org/webt/t3/zt/ba/t3ztba4rnxszduessnjdfx6bjlw.png">
+                </div>
+                <div class="img-container">
+                    <img class="vnytriblock"
+                         src="https://habrastorage.org/webt/sh/ay/bx/shaybxn3k-pd6t2w5nqtkb8adw8.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top: 3.15%" class="boxshadow10">
+                        <img class="algobl" src="https://habrastorage.org/webt/fh/hz/ij/fhhzijfm2exncytoigvntgmstky.png">
+
+        <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container">
+                    <img class="vnytriblock2"
+                         src="https://habrastorage.org/webt/ut/9i/wf/ut9iwftsnxuzk4plwfjxx-exbnw.png" width="115" height="115">
+                    <img class="vnytriblock3"
+                         src="https://habrastorage.org/webt/ic/9a/3u/ic9a3uhymfnwtcc9jutu9drv5p8.png">
+                </div>
+                <div class="img-container">
+                      <img class="vnytriblock2"
+                         src="https://habrastorage.org/webt/au/bp/gz/aubpgzkljprjrdnadfzdvkincp4.png" width="115" height="115">
+                    <img class="vnytriblock3"
+                         src="https://habrastorage.org/webt/ov/hr/jl/ovhrjlfod1_hjwqyo8fkowha6uu.png">
+                </div>
+                <div class="img-container">
+                      <img class="vnytriblock2"
+                         src="https://habrastorage.org/webt/o-/32/1i/o-321i7lpwmy-ooqphibk54elom.png" width="115" height="115">
+                    <img class="vnytriblock3"
+                         src="https://habrastorage.org/webt/ni/m-/lw/nim-lwd0cgelf3oll_jbvzcidre.png">
+                    </div>
+                </div>
+                </div>
+    </div>
+    </div>
+    <div style="margin-top: 3.15%" class="boxshadow10">
+         <img class="algobl1" src="https://habrastorage.org/webt/jw/2u/9m/jw2u9m9esjrf1gsmzs_g9zfprvu.png">
+         <div class="slider-frame">
+            <div class="slide-images">
+                <div class="img-container">
+                        <img class="vnytriblock2"
+                         src="https://habrastorage.org/webt/mq/pk/4v/mqpk4vtmfybb9gzdzdjoo1jug3c.png" width="115" height="115">
+                    <img class="vnytriblock3"
+                         src="https://habrastorage.org/webt/ve/qy/fg/veqyfgppdaw-npngzytx0fk7zlm.png">
+                </div>
+                <div class="img-container">
+                    <img class="vnytriblock2"
+                         src="https://habrastorage.org/webt/wv/py/_m/wvpy_myezogq-mvlfya2q9bclb0.png" width="115" height="115">
+                    <img class="vnytriblock3"
+                         src="https://habrastorage.org/webt/9l/a-/en/9la-ensqpu-gka3bc-7cyxtv5yi.png">
+                </div>
+                <div class="img-container">
+                    <img class="vnytriblock2"
+                         src="https://habrastorage.org/webt/iz/-f/t_/iz-ft_vvji8jvc_bhhn5uc4-d9w.png" width="115" height="115">
+                    <img class="vnytriblock3"
+                         src="https://habrastorage.org/webt/hi/k2/xo/hik2xo0ui4faxijejtylw5a2xvq.png">
+                    </div>
+                </div>
+                </div>
+    </div>
+
+
+</div>
+
+
+</body>
+<body>
+<div class="boxshadow11">
+    <img class="negr" src="https://habrastorage.org/webt/gx/tx/o0/gxtxo0kw9ptqev1cfgfw1cciok0.png">
+</div>
+</body>
+<body>
+<style>input[type=text] {
+    width: 23%;
+    box-sizing: border-box;
+    background-color: #C6C6C6;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 34px;
+    margin-left: 2em;
+    display: inline-block;
+
+
+}
+input[type=text2] {
+    width: 50%;
+    box-sizing: border-box;
+    background-color: #C6C6C6;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 34px;
+    margin-left: 2em;
+    display: inline-block;
+
+}
+
+textarea:focus, input:focus
+{
+  outline: none;
+}
+.wii{
+    font-size: 34px;
+     margin-left: 2em;
+     margin-top: 1em;
+}
+.wii4{
+    font-size: 34px;
+     margin-left: 2em;
+     margin-top: 2em;
+
+     display: inline;
+}
+.wii2{
+    font-size: 34px;
+     margin-left: 9em;
+}
+.wii3{
+    font-size: 34px;
+     margin-left: 8.5em;
+}
+.posbl{
+font-size: 46px;
+font-weight: bold;
+margin-left: 3em;
+
+}
+.posbl4{
+font-size: 46px;
+font-weight: bold;
+margin-left: 9em;
+
+}
+
+.posbl2{
+font-size: 46px;
+display: inline;
+}
+.vniz{
+margin-top: 5px;
+}
+.posbl3{
+    font-size: 34px;
+    margin-left: 1em;
+    margin-top: 2px;
+
+
+}
+.butotpr{
+   margin-left: 5em;
+   height: 100px;
+   width: 300px;
+   border-radius: 8px;
+   border: none;
+   font-size: 40px;
+   display: grid;
+   place-content: center;
+   background-color: #FFFFFF;
+   box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+   margin-left: 6em;
+   display: inline;
+   font-weight: bold;
+}
+
+.logomal1{
+
+ margin-left: 13em;
+}
+img.logomal1:hover {
+
+}
+.logomal4{
+
+
+ margin-left: 13em;
+}
+.logomal7{
+
+
+ margin-left: 13em;
+}
+
+.logomal3{
+
+ margin-left: 13em;
+}
+
+.vlevo{
+    float: left;
+    margin-bottom: 10em;
+    }
+.logomal4{
+
+ width: 60px;
+ height: 60px;
+ margin-top: 4em;
+ margin-left: 21em;
+-webkit-transition: all 1s ease;
+ transition: all 1s ease;
+}
+.logomal5{
+ width: 60px;
+ margin-top: 1em;
+ height: 60px;
+  margin-top: 4em;
+ margin-left: 3em;
+ -webkit-transition: all 1s ease;
+ transition: all 1s ease;
+}
+
+img.logomal5:hover {
+   transform: scale(1.2); /* Увеличиваем масштаб */
+}
+img.logomal4:hover {
+  transform: scale(1.2); /* Увеличиваем масштаб */
+
+}
+.posbl1{
+    font-size: 34px;
+    margin-left: 1em;
+
+}
+</style>
+
+<div class="boxshadow12" name="section1">
+
+     <form method="POST" action="/reg_run">
+        <div>
+            <pis class="posbl"> Расскажи нам о своём проекте</pis>
+            <pis1 class="posbl4"> Связь с нами</pis1>
+        </div>
+        <div>
+            <label class="wii">Ваше имя<font color="red">*</font> </label> <label class="wii2">Ваша фамилия<font
+                color="red">*</font></label>
+
+        </div>
+        <input style="font-style:italic;display:inline;" type="text" id="fname"  name="name" color="#9D9D9C"
+               placeholder="Введите ваше имя">
+        <input style="font-style:italic;display:inline;" type="text" id="finame" name="fname" color="#9D9D9C"
+               placeholder="Введите вашу фамилию">
+
+        <img class="logomal1" src="https://habrastorage.org/webt/fl/gv/hh/flgvhhmzvuly9wyqhxsuvjcpqmk.png">
+        <pis class="posbl1"> +375 44 496 45 95</pis>
+        <div>
+            <div class="vniz">
+                <label class="wii">Ваш номер<font color="red">*</font> </label> <label class="wii3">Ваша почта<font
+                    color="red"></font></label>
+            </div>
+            <input style="font-style:italic" type="text" id="noname" name="nomer" color="#9D9D9C"
+                   placeholder="Введите ваш номер">
+            <input style="font-style:italic;" type="text" id="poname" name="pochta" color="#9D9D9C"
+                   placeholder="Введите вашу почту">
+            <img class="logomal7" src="https://habrastorage.org/webt/-f/bn/dq/-fbndqfrqjppumsiqixgmgxe_sk.png">
+                <pis class="posbl1"> hotmarketingg@gmail.com</pis>
+
+        </div>
+        <div>
+             <div class="vniz">
+
+                <label class="wii">Ваша ниша<font color="red">*</font> </label>
+
+
+            </div>
+            <input style="font-style:italic" type="text2" id="chemname" name="nisha" color="#9D9D9C"
+                   placeholder="Описание вашей ниши">
+            <img class="logomal3" src="https://habrastorage.org/webt/k6/dz/me/k6dzmey-lgd11jxzhxaj_0ucqq8.png">
+            <pis class="posbl3"> Minsk, Belarus</pis>
+
+
+        </div>
+         <p><a name="top"></a></p>
+
+        <div class="vniz">
+            <label style="font-style:italic" class="wii4"><font color="red">*</font> -обязательное поле</label>
+            <button class="butotpr">Отправить</button>
+            <a href="https://vk.com/hottmarketing"><img
+                src="https://hsto.org/webt/on/zr/i7/onzri7q3ufkqspmiwlnvvurslo8.jpeg" alt="Фотография 2"
+                class="logomal4"></a>
+        <a href="https://www.facebook.com/profile.php?id=100085411754701"><img
+                src="https://habrastorage.org/webt/bg/ku/r1/bgkur1uinudjvsp2f0nioauvku8.png" alt="Фотография 3"
+                class="logomal5"></a>
+        <a href="https://www.instagram.com/_hot.marketing_/"><img
+                src="https://habrastorage.org/webt/rp/tm/bn/rptmbnbr11vd39irw628dzqrbzi.png" alt="Фотография 4"
+                class="logomal5"></a>
+
+        </div>
+    </form>
+</div>
+
+
+</div>
+</body>
+<!--<input type="radio" name="point" id="slide1" checked>-->
+<!--<input type="radio" name="point" id="slide2">-->
+<!--<input type="radio" name="point" id="slide3">-->
+<!--<input type="radio" name="point" id="slide4">-->
+<!--<input type="radio" name="point" id="slide5">-->
+
+</body>
+
+<!--        <div class="box">-->
+
+<!--            <div class="item">item 1</div>-->
+<!--            <div class="item">item 2</div>-->
+<!--            <div class="item">item 3</div>-->
+<!--            <nav>-->
+<!--              <a href="#page-1">1</a>-->
+<!--              <a href="#page-2">2</a>-->
+<!--              <a href="#page-3">3</a>-->
+<!--            </nav>-->
+<!--        </div>-->
+
+<body>
+
+</body>
+</html>
